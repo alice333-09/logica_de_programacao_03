@@ -42,4 +42,30 @@
 
 # quest.6
 
+# def notas (a,b,c,d):
+#     media = (a+b+c+d)/2
+#     return (f"A média é {media}")
+# print(notas(2,4,5,6))
+
+# quest.7
+
+# def fatorial(x):
+#     cont=1
+#     f= x
+#     while f >= 1:
+#         cont *= f
+#         f -= 1
+#     return (f"O fatorial de {x} é {cont}")
+# print(fatorial(int(input("Digite um número: "))))
+
+# quest.8
+
+def palavra(x):
+    vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    cont=0
+    for vogais in x:
+        cont += 1
+    return (f"A palavra {x} tem {cont} vogais")
+print(palavra (input("Diga uma palavra: ")))   
+
 
