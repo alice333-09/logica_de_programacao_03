@@ -60,12 +60,16 @@
 
 # quest.8
 
-def palavra(x):
-    vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
-    cont=0
-    for vogais in x:
-        cont += 1
-    return (f"A palavra {x} tem {cont} vogais")
-print(palavra (input("Diga uma palavra: ")))   
+# def aleatorio(palavra):
+#     vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
+#     cont=0
+#     for c in palavra:
+#         if c in vogais: 
+#             cont += 1
+#     return (f"A palavra {palavra} tem {cont} vogais")
+# print(aleatorio(input("Diga uma palavra: ")))   
+
+# quest.9
+
 
 
