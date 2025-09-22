@@ -60,7 +60,6 @@
 
 # quest.8
 
-<<<<<<< HEAD
 # def palavra(x):
 #     vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
 #     cont=0
@@ -72,22 +71,24 @@
 
 # quest.10
 
-nmr=int(input("Digite um número: "))
+# nmr=int(input("Digite um número: "))
+# soma = 0
+# for i in range(0,nmr):
+#     if i % 2 == 0:
+#         soma += i
+# print(f"A soma dos número pares é {soma}")
+
+# ques.11
+
+def soma(x, y):
+    return (x + y)
+print(soma(2,3))
+
+    
+        
  
 
 
-=======
-# def aleatorio(palavra):
-#     vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
-#     cont=0
-#     for c in palavra:
-#         if c in vogais: 
-#             cont += 1
-#     return (f"A palavra {palavra} tem {cont} vogais")
-# print(aleatorio(input("Diga uma palavra: ")))   
-
-# quest.9
->>>>>>> 36ca401143725a8b3f36e78947c66b0730612546
 
 
 
