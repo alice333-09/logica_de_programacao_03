@@ -28,16 +28,16 @@
 # quest.4
 
 # nmr= int(input("digite um número inteiro: "))
-# for i in range (10):
+# for i in range (11):
 #     resul= nmr*i
 #     print(f"{nmr} x {i} = {resul}")
 
 # quest.5
 
-# cont= 1
-# while cont <= 10:
+# cont= 10
+# while cont >= 1:
 #     print(cont)
-#     cont += 1
+#     cont -= 1
 # print("Explosão!!!!!!!!!!!")
 
 # quest.6
@@ -60,12 +60,21 @@
 
 # quest.8
 
-def palavra(x):
-    vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
-    cont=0
-    for vogais in x:
-        cont += 1
-    return (f"A palavra {x} tem {cont} vogais")
-print(palavra (input("Diga uma palavra: ")))   
+# def palavra(x):
+#     vogais=["a","e", "i", "o", "u", "A", "E", "I", "O", "U"]
+#     cont=0
+#     for c in x:
+#         if c in vogais:
+#             cont += 1
+#     return (f"A palavra {x} tem {cont} vogais")
+# print(palavra (input("Diga uma palavra: ")))   
+
+# quest.10
+
+nmr=int(input("Digite um número: "))
+ 
+
+
+
 
 
