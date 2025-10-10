@@ -35,15 +35,22 @@
 
 # quetão 3 (soma de pares e ímpares)
 
-lista=[]
-lisp=[]
-lisi=[]
-for i in range(10):
-    lista.append(int(input("Digite um número: ")))
-for i in lista:
-    if i % 2 == 0:
-        lisp.append(i)
-print(lisp)
+# lista=[]
+# lisp=[]
+# lisi=[]
+# for i in range(10):
+#     lista.append(int(input("Digite um número: ")))
+# for i in lista:
+#     if i % 2 == 0:
+#         lisp.append(i)
+#     else:
+#         lisi.append(i)
+# somai = sum(lisi)
+# somap = sum(lisp)
+# print(somap)
+# print(somai)
+# print(lisp)
+# print(lisi)
         
 
 
@@ -57,4 +64,31 @@ print(lisp)
 #     print("Convidado confirmado!")
 # else:
 #     print("Convidado não encontrado!")
+
+#questao 8 (contagem regressiva)
+contador = 10
+for i in contador:
+    print(i)
+    contador -= 1
+print("EXPLODIUUUUUUUUUU!!!")
+
+#questão 12
+# def eh_primo(numero):
+#     if numero < 2:
+#         return False
+#     if numero == 2:
+#         return True
+#     if numero % 2 == 0:
+#         return False
+#     for i in range(3, int(numero**0.5) + 1, 2):
+#         if numero % i == 0:
+#             return False 
+#     return True  
+# num = int(input("Digite um número inteiro: "))
+# if eh_primo(num):
+#     print(f"{num} é um número primo.")
+# else:
+#     print(f"{num} não é um número primo.")
+
+
 
