@@ -52,8 +52,6 @@
 # print(lisp)
 # print(lisi)
         
-
-
 # questão 4 (lista de convidados)
 
 # lista=[]
@@ -65,14 +63,25 @@
 # else:
 #     print("Convidado não encontrado!")
 
-#questao 8 (contagem regressiva)
-contador = 10
-for i in contador:
-    print(i)
-    contador -= 1
-print("EXPLODIUUUUUUUUUU!!!")
+# questão 5 ( Nomes com mais de 5 letras)
 
-#questão 12
+# def filtrar_nomes(nomes):
+#     nomes_filtrados = []
+#     for nome in nomes:
+#         if len(nome) > 5:
+#             nomes_filtrados.append(nome)
+    # return nomes_filtrados
+
+# questão 6 (Busca em lista por posição)
+
+# lista=[]
+# for i in range(6):
+#     lista.append(input("Digite um nome: "))
+# pos=int(input("Digite uma posição de 0 a 5: "))
+# print(f"O nome na posição {pos} é {lista[pos]}")
+
+#questão 7
+
 # def eh_primo(numero):
 #     if numero < 2:
 #         return False
@@ -89,6 +98,15 @@ print("EXPLODIUUUUUUUUUU!!!")
 #     print(f"{num} é um número primo.")
 # else:
 #     print(f"{num} não é um número primo.")
+
+# questao 8 (contagem regressiva)
+
+# cont= 10
+# while cont >= 1:
+#     print(cont)
+#     cont -= 1
+# print("Explosão!!!!!!!!!!!")
+
 
 
 
