@@ -1,11 +1,8 @@
 
 def calcular_media(ListaNotas):
-    for i in range(1,5):
-        digitar = int(input("Digite as notas: "))
-        ListaNotas.append(digitar)
-    notas = sum(ListaNotas)
-    media = notas / i
-    return (f"A média é {media}")
+    media = sum(ListaNotas) / len(ListaNotas)
+    return media
+
 
 def verificar_situação(media):
     if media >= 7:
