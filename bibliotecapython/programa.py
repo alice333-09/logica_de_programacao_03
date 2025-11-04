@@ -1,5 +1,5 @@
 
-import tabulate
+from tabulate import tabulate
 from funcoes import *
 
 ListaLivros = []
@@ -34,4 +34,4 @@ while True:
 
     else:
         print("Opcao invalida.")
-    
+        
