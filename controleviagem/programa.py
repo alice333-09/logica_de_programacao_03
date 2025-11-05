@@ -15,4 +15,5 @@ while True:
             registrar_viagem(listaViagens)
         if op == 2:
             exibir_viagens(listaViagens)
-
+        if op == 3:
+             buscar_motorista(listaViagens)
