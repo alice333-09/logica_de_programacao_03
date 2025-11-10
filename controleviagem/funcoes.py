@@ -24,24 +24,7 @@ def registrar_viagem(listaViagens):
     print("Viagem marcada com sucesso!")
 
 def exibir_viagens(listaViagens):
-    if not listaViagens:
-        print("Nenhuma viagem cadastrada.")
-        return
-
-    headers = ["Motorista", "Destino", "Distancia (km)", "Gasto (R$)", "Consumo (R$/km)"]
-    dados = [
-        [v["Motorista"], v["Destino"], v["Distancia (km)"], v["Gasto (R$)"], v["Consumo (R$/km)"]]
-        for v in listaViagens
-    ]
-
-    print(tabulate(
-        dados,
-        headers=headers,
-        tablefmt="fancy_grid",
-        numalign="right",
-        stralign="center",
-        colalign=("center", "center", "right", "right", "right")
-    ))
+    print(tabulate(listaViagens))
 
 def buscar_motorista(listaViagens):
     motorista_buscar = input("Digite o nome do motorista: ")
@@ -55,7 +38,15 @@ def viagem_mais_cara(listaViagens):
     for i in listaViagens:
         if i["Gasto"] >= maiorGasto:
             maiorGasto = i["Gasto"]
-        print(maiorGasto)
+            condutor = i["Motorista"]
+        print(f"a viagem mais cara custa: {maiorGasto} e o motorista que conduziu o veiculo foi o motorista {condutor}.")
+
 def media_consumo(listaViagens):
-    for i in listaViagens:
-        for medcons in i["Consumo"]:
+    if not listaViagens:
+        print("Nenhuma viagem registrada.")
+        return
+
+    total = sum(v.get("Consumo", 0) for v in listaViagens)
+    contador = len(listaViagens)
+    media = total / contador if contador else 0
+    print(f"A média de consumo de todas as viagens é {media:.2f}")

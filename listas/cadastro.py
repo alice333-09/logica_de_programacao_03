@@ -5,7 +5,7 @@ senha = input("Digite sua senha (apenas números): ")
 email = input("Digite seu e-mail: ")
 telefone = input("Digite seu telefone (apenas números): ")
 
-print(f"\nDados coletados.")
+print(f"Dados coletados.")
 
 dados_para_salvar = {
     "nome": nome,
