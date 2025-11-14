@@ -20,6 +20,7 @@ def registrar_viagem(listaViagens):
         "Consumo": cons
     }
     
+    
     listaViagens.append(viagem)
     print("Viagem marcada com sucesso!")
 
