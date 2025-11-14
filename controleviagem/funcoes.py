@@ -28,18 +28,18 @@ def exibir_viagens(listaViagens):
 
 def buscar_motorista(listaViagens):
     motorista_buscar = input("Digite o nome do motorista: ")
-    motoristabusca = []
     for i in listaViagens:
         if i ["Motorista"] == motorista_buscar:
-            motoristabusca.append(i)
-            print(motoristabusca)
+            print(i)
+        else:
+            print("Nenhuma viagem feita por esse motorista.")
 def viagem_mais_cara(listaViagens):
     maiorGasto = 0
     for i in listaViagens:
         if i["Gasto"] >= maiorGasto:
             maiorGasto = i["Gasto"]
             condutor = i["Motorista"]
-        print(f"a viagem mais cara custa: {maiorGasto} e o motorista que conduziu o veiculo foi o motorista {condutor}.")
+        print(f"a viagem mais cara custa: {maiorGasto} e o motorista que conduziu foi {condutor}.")
 
 def media_consumo(listaViagens):
     if not listaViagens:
