@@ -1,4 +1,3 @@
-# ...existing code...
 from alunos import *
 from turmas import *
 from tabulate import tabulate
@@ -58,10 +57,14 @@ def listar_alunos_da_turma(relacoes):
     print(tabulate(alunos_turma, headers="keys", tablefmt="grid"))
 
 def remover_aluno_da_turma(relacoes):
-    idaluno = input("Digite o id do aluno: ")
-    idturma = input("Digite o id da turma: ")
+    id_aluno = int(input("Digite o id do aluno: "))
+    id_turma = int(input("Digite o id da turma: "))
+    encontrada = False
     for i in relacoes:
-        if idaluno == i["ID_ALUNO"] and id_turma == i["ID_TURMA"]:
+        if id_aluno == i["ID_ALUNO"] and id_turma == i["ID_TURMA"]:
             relacoes.remove(i)
-        else:
-            print("Não foi encontrada essa relação.")
+            encontrada = True
+            print("Aluno removido da turma com sucesso.")
+            break
+    if not encontrada:
+        print("Não foi encontrada essa relação.")
