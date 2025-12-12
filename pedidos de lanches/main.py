@@ -9,9 +9,9 @@ while True:
     op = input("Digite uma opção: ")
     match op:
         case "1":
-            print(exibir_cardapio())
+            exibir_cardapio()
         case "2":
-            print(buscar_item())
+            buscar_item()
         # case "3":
         #     exibir_pedido()
         # case "4":

@@ -8,9 +8,14 @@ def carregar_cardapio():
     lista_cardapio.extend(cardapio)
 def exibir_cardapio():
     carregar_cardapio()
-    return lista_cardapio
+    print(lista_cardapio)
 def buscar_item():
     iddgt = int(input("Digite o id do item que gostaria de pedir: "))
     for i in lista_cardapio:
-        if i ["id"] == iddgt:
+        if i["id"] == iddgt:
             print(i)
+            break
+        else:
+            print("Produto não encontrado!")
+            break
+        
